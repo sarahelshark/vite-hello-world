@@ -3,7 +3,8 @@ export default {
   name:'App',
   data(){
     return {
-      message:'sarah'
+      message:'sarah',
+      content:'lorem ipsum dolor'
     }
   }
 }
@@ -13,6 +14,7 @@ export default {
  
     <div class="wrapper">
       <h1>Hello {{ message }}</h1>
+      <p>{{ content }}</p>
     </div>
   
 
