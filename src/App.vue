@@ -8,8 +8,13 @@ export default {
       msg:'lorem',
       name:'',
       lastname:'',
-      styles:' text-red bg-gray'
+      styles:' text-red bg-gray',
 
+    }
+  },
+  methods:{
+    testFunction(){
+      console.log('This is a method [a function inside an object]')
     }
   }
 }
