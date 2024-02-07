@@ -15,6 +15,7 @@ export default {
   methods:{
     testFunction(){
       console.log('This is a method [a function inside an object]')
+      console.log(this.message)
     }
   }
 }
