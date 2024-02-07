@@ -8,6 +8,7 @@ export default {
       msg:'lorem',
       name:'',
       lastname:'',
+      styles:' text-red bg-gray'
 
     }
   }
@@ -24,7 +25,7 @@ export default {
     <div></div>
     <div>
         <label for="name"> First name:</label>
-        <input type="text" v-model="name">
+        <input  type="text" v-model="name">
         <div></div>
         <label for="lastname"> Last name:</label>
         <input type="text" v-model="lastname">
@@ -32,6 +33,14 @@ export default {
         <p>
           Ciao{{ ' '+ name + ' ' +lastname}}, bentornato!
         </p> <!--tecnica mustache syntax-->
+
+        <p v-bind:class="styles"> <!--class binding Forma estesa-->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus blanditiis, incidunt modi unde minus expedita rem, quas laudantium eum sint, in veritatis? Ea error incidunt amet quia, iure pariatur ab.
+        </p>
+        <p :class="styles"> <!--class binding Forma breve-->
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus blanditiis, incidunt modi unde minus expedita rem, quas laudantium eum sint, in veritatis? Ea error incidunt amet quia, iure pariatur ab.
+        </p>
+
         
     </div>
   </div>
