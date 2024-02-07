@@ -46,6 +46,8 @@ export default {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus blanditiis, incidunt modi unde minus expedita rem, quas laudantium eum sint, in veritatis? Ea error incidunt amet quia, iure pariatur ab.
         </p>
 
+        <button @click="testFunction">click</button>
+
         
     </div>
   </div>
