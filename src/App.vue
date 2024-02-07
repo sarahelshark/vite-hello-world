@@ -13,9 +13,13 @@ export default {
     }
   },
   methods:{
+    anotherFunction(){
+      console.log('another function')
+    },
     testFunction(){
       console.log('This is a method [a function inside an object]')
       console.log(this.message)
+      this.anotherFunction();
     }
   }
 }
