@@ -9,6 +9,7 @@ export default {
       name:'',
       lastname:'',
       styles:' text-red bg-gray',
+      count: 0 , //il mio conteggio parte da 0
 
     }
   },
@@ -52,6 +53,7 @@ export default {
         </p>
 
         <button @click="testFunction">click</button>
+        <button @click= "count++">click {{ count }}</button>  <!--NOTA BENE, ogni pezzo di codice contrnut tra "" di fatto si tratta di codice JS PLAIN -->
 
         
     </div>
