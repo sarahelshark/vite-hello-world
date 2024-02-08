@@ -10,6 +10,7 @@ export default {
       lastname:'',
       styles:' text-red bg-gray',
       count: 0 , //il mio conteggio parte da 0
+      image:'https://picsum.photos/200/300'
 
     }
   },
@@ -46,7 +47,7 @@ export default {
         <div></div>
         <label for="lastname"> Last name:</label>
         <input type="text" v-model="lastname">
-        <div></div>
+
         <p>
           Ciao {{  name }} {{ lastname }} , bentornato!
         </p> <!--tecnica mustache syntax-->
@@ -61,7 +62,7 @@ export default {
         <button @click="testFunction">click</button>
         <button @click="greetUser">benvenuto</button>
         <button @click= "count++">click {{ count }}</button>  <!--NOTA BENE, ogni pezzo di codice contrnut tra "" di fatto si tratta di codice JS PLAIN -->
-     
+        <img :src="image" alt="random picture">
     </div>
   </div>
 </template>
