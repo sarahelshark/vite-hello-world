@@ -21,6 +21,12 @@ export default {
       console.log('This is a method [a function inside an object]')
       console.log(this.message)
       this.anotherFunction();
+    },
+    greetUser(event){
+      alert (`Ciao ${this.name}, nice to see you again!`)
+      if (event){
+        alert(event.target.name)
+      }
     }
   }
 }
@@ -42,7 +48,7 @@ export default {
         <input type="text" v-model="lastname">
         <div></div>
         <p>
-          Ciao{{ ' '+ name + ' ' +lastname}}, bentornato!
+          Ciao {{  name }} {{ lastname }} , bentornato!
         </p> <!--tecnica mustache syntax-->
 
         <p v-bind:class="styles"> <!--class binding Forma estesa-->
@@ -53,9 +59,9 @@ export default {
         </p>
 
         <button @click="testFunction">click</button>
+        <button @click="greetUser">benvenuto</button>
         <button @click= "count++">click {{ count }}</button>  <!--NOTA BENE, ogni pezzo di codice contrnut tra "" di fatto si tratta di codice JS PLAIN -->
-
-        
+     
     </div>
   </div>
 </template>
